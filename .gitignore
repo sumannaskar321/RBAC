@@ -1,0 +1,62 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data & PIDs
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output
+
+# Build and distribution directories
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# TypeScript & Linter cache
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# Package manager files & cache
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDE & Editor settings
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,22 @@
+info:
+  name: "[ADMIN] permission add"
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/api/v1/permission/add
+  body:
+    type: json
+    data: |-
+      {
+        "permission_name": "post",
+        "default": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

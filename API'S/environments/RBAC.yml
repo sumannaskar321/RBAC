@@ -1,0 +1,4 @@
+name: RBAC
+variables:
+  - name: authorization
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNmFkZjMxMTZhNjk2ZmU3ZTVjYjBhYTVlIiwicm9sZSI6MSwibmFtZSI6ImFkbWluIn0sImlhdCI6MTc5MzgxMzQyNSwiZXhwIjoxNzkzODE1MjI1fQ.GSRxJuJx1OYaA4RHCtY1AOkJ8ahnNsb7zo3JFLnQ1WM

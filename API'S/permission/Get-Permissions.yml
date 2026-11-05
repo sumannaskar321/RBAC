@@ -1,0 +1,18 @@
+info:
+  name: Get-Permissions
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:3000/api/v1/permission/get-permissions
+  headers:
+    - name: Authorization
+      value: Bearer {{authorization}}
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,41 @@
+info:
+  name: Login
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/api/v1/user/login
+  body:
+    type: json
+    data: |-
+      {
+        "email": "admin@gmail.com",
+        "password": "admin@123"
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: before-request
+      code: |-
+        {
+          
+        }
+    - type: after-response
+      code: |-
+        const response = res.getBody();
+
+        const token = response.data?.accessToken;
+
+        if (token) {
+          bru.setEnvVar("authorization", token, {persist: true});
+        } else {
+          console.error("Token not found in the response", response);
+        }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
